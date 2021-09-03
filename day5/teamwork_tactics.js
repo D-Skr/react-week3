@@ -16,3 +16,11 @@
  console.log(possibleBonus(1,8))  //false
  console.log(possibleBonus(5,3))  //false
  
+ const addNumberToNumber = (x) => {
+    return function(y) {
+        return x + y
+    }
+}
+const myFunction = addNumberToNumber(3);
+console.log(myFunction(3))
+console.log(addNumberToNumber(3)(5))
